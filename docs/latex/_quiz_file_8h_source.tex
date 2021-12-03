@@ -1,0 +1,58 @@
+\hypertarget{_quiz_file_8h_source}{}\doxysection{Quiz\+File.\+h}
+\mbox{\hyperlink{_quiz_file_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef QUIZFILE}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define QUIZFILE}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QChar>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QFile>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QTextStream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_quiz_8h}{Quiz.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_question_8h}{Question.h}}"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_answer_8h}{Answer.h}}"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_codec_8h}{Codec.h}}"{}}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_quiz_file}{QuizFile}} \{}
+\DoxyCodeLine{33     \textcolor{keyword}{private}:}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_quiz}{Quiz}}                  *quizTemp;}
+\DoxyCodeLine{35         QFile                 *file;}
+\DoxyCodeLine{36         QString                saveFilename;}
+\DoxyCodeLine{37         QString                openFilename;}
+\DoxyCodeLine{38         std::string            multiLineString;}
+\DoxyCodeLine{39         std::string            currentLine;}
+\DoxyCodeLine{40         std::string            endOfString;}
+\DoxyCodeLine{41         QTextStream            in;}
+\DoxyCodeLine{42         QTextStream            out;}
+\DoxyCodeLine{43         std::vector<Answer>    answers;}
+\DoxyCodeLine{44         std::vector<Question>  questions;}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_question}{Question}}              *question;}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_answer}{Answer}}                   answer;}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int}                    numQuestions;}
+\DoxyCodeLine{48         \textcolor{keywordtype}{int}                    numAnswers;}
+\DoxyCodeLine{49         \mbox{\hyperlink{class_codec}{Codec}}                 *codec;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keyword}{public}:}
+\DoxyCodeLine{52         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_quiz_file_a77f31b8cdbc1bf091413a740149c9173}{QuizFile}}(\mbox{\hyperlink{class_quiz}{Quiz}} *quizTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}());}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_quiz_file_ac0244cbcf736dc52842e302f52c9b2b8}{\string~QuizFile}}();}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_quiz_file_a50662a3283c9e463f8b64e25efa6dae3}{readFile}}(QString);}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_quiz_file_a8be5691090eac7f5cc03932ad5b31534}{writeFile}}(QString);}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

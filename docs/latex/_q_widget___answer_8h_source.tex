@@ -1,0 +1,61 @@
+\hypertarget{_q_widget___answer_8h_source}{}\doxysection{QWidget\+\_\+\+Answer.\+h}
+\mbox{\hyperlink{_q_widget___answer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef QWIDGET\_ANSWER}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define QWIDGET\_ANSWER}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QPlainTextEdit>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QCheckBox>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QRadioButton>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_answer_8h}{Answer.h}}"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_take_quiz_8h}{WindowTakeQuiz.h}}"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{namespace }UI \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_window_take_quiz}{WindowTakeQuiz}}; \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_q_widget___answer}{QWidget\_Answer}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{33     Q\_OBJECT}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{private}:}
+\DoxyCodeLine{36         QLineEdit      *lineEdit\_Letter;}
+\DoxyCodeLine{37         QPlainTextEdit *plainTextEdit\_Text;}
+\DoxyCodeLine{38         QRadioButton   *radioButton\_InputT;}
+\DoxyCodeLine{39         QRadioButton   *radioButton\_InputF;}
+\DoxyCodeLine{40         QCheckBox      *checkBox\_InputMC;}
+\DoxyCodeLine{41         QPlainTextEdit *plainTextEdit\_InputWA;}
+\DoxyCodeLine{42         QLineEdit      *lineEdit\_Points;}
+\DoxyCodeLine{43         QPlainTextEdit *plainTextEdit\_Feedback;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{public}:}
+\DoxyCodeLine{46         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_q_widget___answer_af258d3c8b6cf5c7f7798ab69c5f80cec}{QWidget\_Answer}}(\mbox{\hyperlink{class_answer}{Answer}} *answer = \textcolor{keyword}{new} \mbox{\hyperlink{class_answer}{Answer}}(), QWidget *parent = 0);}
+\DoxyCodeLine{47         \mbox{\hyperlink{class_q_widget___answer_a0e024f32d1f91b6fa73573d4a8ed9e45}{\string~QWidget\_Answer}}();}
+\DoxyCodeLine{48         \textcolor{keywordtype}{int}         \mbox{\hyperlink{class_q_widget___answer_a1ff70011eece879542c5ac3e8d54218b}{getQWidget\_AnswerInputTF}}();}
+\DoxyCodeLine{49         \textcolor{keywordtype}{bool}        \mbox{\hyperlink{class_q_widget___answer_a61fa66ec2e9a05060d503524f6c9a61b}{getQWidget\_AnswerInputMC}}();}
+\DoxyCodeLine{50         std::string \mbox{\hyperlink{class_q_widget___answer_a6a6a92a429b4e0d099d6bbcee97f42fb}{getQWidget\_AnswerInputWA}}();}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_a27c44d06b323b22a6a3fb045c73b25b7}{setQWidget\_AnswerLetter}}(\textcolor{keywordtype}{char} answerLetter);}
+\DoxyCodeLine{52         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_a0850c3fd572193d0210392804de46972}{setQWidget\_AnswerText}}(std::string answerText);}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_a819e36fd6b3c95ee7a9721c240d3cacd}{setQWidget\_AnswerInputTF}}(\textcolor{keywordtype}{bool} answerInputTF);}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_ad4abfa00ae24ae1f516fb5131d3c8646}{setQWidget\_AnswerInputMC}}(\textcolor{keywordtype}{bool} answerInputMC);}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_adfb34b92c16d69e36c793deae2f798fd}{setQWidget\_AnswerInputWA}}(std::string answerInputWA);}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_a941eae1063abab818e3e10880e7b3744}{setQWidget\_AnswerPoints}}(\textcolor{keywordtype}{float} answerInput, \textcolor{keywordtype}{float} answerCorrect);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_afbaf977f6477f9bc2f66b1da519bfa54}{setQWidget\_AnswerFeedback}}(std::string answerFeedback);}
+\DoxyCodeLine{58         \textcolor{keywordtype}{void}        \mbox{\hyperlink{class_q_widget___answer_a02c18f44b5305b52ba0338368a1d0af1}{disableQObjects}}(\textcolor{keywordtype}{int} answerType);}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

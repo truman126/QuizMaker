@@ -1,0 +1,97 @@
+\hypertarget{class_quiz_file}{}\doxysection{Quiz\+File Class Reference}
+\label{class_quiz_file}\index{QuizFile@{QuizFile}}
+
+
+\mbox{\hyperlink{class_quiz_file}{Quiz\+File}} Class used to read/write \mbox{\hyperlink{class_quiz}{Quiz}} Files.  
+
+
+
+
+{\ttfamily \#include $<$Quiz\+File.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quiz_file_a77f31b8cdbc1bf091413a740149c9173}{Quiz\+File}} (\mbox{\hyperlink{class_quiz}{Quiz}} $\ast$quiz\+Temp=new \mbox{\hyperlink{class_quiz}{Quiz}}())
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_quiz_file_ac0244cbcf736dc52842e302f52c9b2b8}{$\sim$\+Quiz\+File}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_file_a50662a3283c9e463f8b64e25efa6dae3}{read\+File}} (QString)
+\begin{DoxyCompactList}\small\item\em Method to read and parse a quiz file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quiz_file_a8be5691090eac7f5cc03932ad5b31534}{write\+File}} (QString)
+\begin{DoxyCompactList}\small\item\em Method to write a \mbox{\hyperlink{class_quiz}{Quiz}} to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_quiz_file}{Quiz\+File}} Class used to read/write \mbox{\hyperlink{class_quiz}{Quiz}} Files. 
+
+\begin{DoxyAuthor}{Author}
+Truman Johnston
+\end{DoxyAuthor}
+The \mbox{\hyperlink{class_quiz_file}{Quiz\+File}} class is used to write a quiz object to the file system and also read a file into a quiz object 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_quiz_file_a77f31b8cdbc1bf091413a740149c9173}\label{class_quiz_file_a77f31b8cdbc1bf091413a740149c9173}} 
+\index{QuizFile@{QuizFile}!QuizFile@{QuizFile}}
+\index{QuizFile@{QuizFile}!QuizFile@{QuizFile}}
+\doxysubsubsection{\texorpdfstring{QuizFile()}{QuizFile()}}
+{\footnotesize\ttfamily Quiz\+File\+::\+Quiz\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quiz}{Quiz}} $\ast$}]{quiz\+Temp = {\ttfamily new~\mbox{\hyperlink{class_quiz}{Quiz}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Constructor for the quiz file class that creates a folder for \mbox{\hyperlink{class_quiz}{Quiz}} files if not already existing 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$quiz\+Temp} & \mbox{\hyperlink{class_quiz}{Quiz}} Pointers that points to quiz object to be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_quiz_file_ac0244cbcf736dc52842e302f52c9b2b8}\label{class_quiz_file_ac0244cbcf736dc52842e302f52c9b2b8}} 
+\index{QuizFile@{QuizFile}!````~QuizFile@{$\sim$QuizFile}}
+\index{````~QuizFile@{$\sim$QuizFile}!QuizFile@{QuizFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$QuizFile()}{~QuizFile()}}
+{\footnotesize\ttfamily Quiz\+File\+::$\sim$\+Quiz\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Desconstructor for the \mbox{\hyperlink{class_quiz_file}{Quiz\+File}} class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quiz_file_a50662a3283c9e463f8b64e25efa6dae3}\label{class_quiz_file_a50662a3283c9e463f8b64e25efa6dae3}} 
+\index{QuizFile@{QuizFile}!readFile@{readFile}}
+\index{readFile@{readFile}!QuizFile@{QuizFile}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily void Quiz\+File\+::read\+File (\begin{DoxyParamCaption}\item[{QString}]{open\+Filename }\end{DoxyParamCaption})}
+
+
+
+Method to read and parse a quiz file. 
+
+Method that reads and parses\textquotesingle{} a file into the quiz\+Temp pointer 
+\begin{DoxyParams}{Parameters}
+{\em open\+Filename} & QString that is used to locate the quiz file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_quiz_file_a8be5691090eac7f5cc03932ad5b31534}\label{class_quiz_file_a8be5691090eac7f5cc03932ad5b31534}} 
+\index{QuizFile@{QuizFile}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!QuizFile@{QuizFile}}
+\doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
+{\footnotesize\ttfamily void Quiz\+File\+::write\+File (\begin{DoxyParamCaption}\item[{QString}]{save\+Filename }\end{DoxyParamCaption})}
+
+
+
+Method to write a \mbox{\hyperlink{class_quiz}{Quiz}} to a file. 
+
+Method to write a \mbox{\hyperlink{class_quiz}{Quiz}} to a file 
+\begin{DoxyParams}{Parameters}
+{\em save\+Filename} & QString to save the \mbox{\hyperlink{class_quiz}{Quiz}} with save\+Filename variable name \\
+\hline
+\end{DoxyParams}
+Write \mbox{\hyperlink{class_quiz}{Quiz}} Details to File
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_quiz_file_8h}{Quiz\+File.\+h}}\item 
+\mbox{\hyperlink{_quiz_file_8cpp}{Quiz\+File.\+cpp}}\end{DoxyCompactItemize}

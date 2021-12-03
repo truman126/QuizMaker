@@ -1,0 +1,82 @@
+\hypertarget{_window_edit_answer_8h_source}{}\doxysection{Window\+Edit\+Answer.\+h}
+\mbox{\hyperlink{_window_edit_answer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef WINDOWEDITANSWER}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define WINDOWEDITANSWER}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QRadioButton>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QPlainTextEdit>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_quiz_8h}{Quiz.h}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_question_8h}{Question.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_answer_8h}{Answer.h}}"{}}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{namespace }UI \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_window_edit_answer}{WindowEditAnswer}}; \}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_edit_question}{WindowEditQuestion}}; \textcolor{comment}{// Forward declaration.}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{38 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_edit_answer}{WindowEditAnswer}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{39     Q\_OBJECT}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keyword}{private}:}
+\DoxyCodeLine{42         QLabel                *label\_Letter;}
+\DoxyCodeLine{43         QLineEdit             *lineEdit\_Letter;}
+\DoxyCodeLine{44         QLabel                *label\_Points;}
+\DoxyCodeLine{45         QLineEdit             *lineEdit\_Points;}
+\DoxyCodeLine{46         QRadioButton          *radioButton\_AnswerTypeTF;}
+\DoxyCodeLine{47         QRadioButton          *radioButton\_AnswerTypeMC;}
+\DoxyCodeLine{48         QRadioButton          *radioButton\_AnswerTypeWA;}
+\DoxyCodeLine{49         QPlainTextEdit        *plainTextEdit\_Text;}
+\DoxyCodeLine{50         QLabel                *label\_Input;}
+\DoxyCodeLine{51         QLineEdit             *lineEdit\_Input;}
+\DoxyCodeLine{52         QLabel                *label\_Correct;}
+\DoxyCodeLine{53         QLineEdit             *lineEdit\_Correct;}
+\DoxyCodeLine{54         QPlainTextEdit        *plainTextEdit\_Feedback;}
+\DoxyCodeLine{55         QPushButton           *pushButton\_Cancel;}
+\DoxyCodeLine{56         QPushButton           *pushButton\_Ok;}
+\DoxyCodeLine{57         QMessageBox            messageBox;}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_window_edit_question}{WindowEditQuestion}}    *windowEditQuestion;}
+\DoxyCodeLine{59         \mbox{\hyperlink{class_quiz}{Quiz}}                  *quiz;}
+\DoxyCodeLine{60         \mbox{\hyperlink{class_quiz}{Quiz}}                  *quizTemp;}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_quiz}{Quiz}}                  *quizTempTemp;}
+\DoxyCodeLine{62         \mbox{\hyperlink{class_quiz}{Quiz}}                  *quizTempTempTemp;}
+\DoxyCodeLine{63         \mbox{\hyperlink{class_question}{Question}}              *question;}
+\DoxyCodeLine{64         \mbox{\hyperlink{class_question}{Question}}              *questionTemp;}
+\DoxyCodeLine{65         \mbox{\hyperlink{class_answer}{Answer}}                *answer;}
+\DoxyCodeLine{66         std::vector<Question>  quizQuestionsTemp;}
+\DoxyCodeLine{67         std::vector<Answer>    questionAnswersTemp;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{70         \textcolor{keywordtype}{void} cancel();}
+\DoxyCodeLine{71         \textcolor{keywordtype}{void} ok();}
+\DoxyCodeLine{72         \textcolor{keywordtype}{bool} isNumber(\textcolor{keyword}{const} std::string\& answerPointsInput);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keyword}{public}:}
+\DoxyCodeLine{75         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_window_edit_answer_aa8253f3b115b1fae337d150011d6fa22}{WindowEditAnswer}}(\mbox{\hyperlink{class_quiz}{Quiz}} *quiz = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), \mbox{\hyperlink{class_quiz}{Quiz}} *quizTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), \mbox{\hyperlink{class_quiz}{Quiz}} *quizTempTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), \mbox{\hyperlink{class_quiz}{Quiz}} *quizTempTempTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), \mbox{\hyperlink{class_question}{Question}} *question = \textcolor{keyword}{new} \mbox{\hyperlink{class_question}{Question}}(), \mbox{\hyperlink{class_question}{Question}} *questionTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_question}{Question}}(), \mbox{\hyperlink{class_answer}{Answer}} *answer = \textcolor{keyword}{new} \mbox{\hyperlink{class_answer}{Answer}}(), QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{76         \mbox{\hyperlink{class_window_edit_answer_a9bd940420a482ec3f7801e86e5561509}{\string~WindowEditAnswer}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     signals:}
+\DoxyCodeLine{79         \textcolor{keywordtype}{void} switchWindow();}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

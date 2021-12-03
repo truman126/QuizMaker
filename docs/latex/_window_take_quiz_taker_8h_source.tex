@@ -1,0 +1,57 @@
+\hypertarget{_window_take_quiz_taker_8h_source}{}\doxysection{Window\+Take\+Quiz\+Taker.\+h}
+\mbox{\hyperlink{_window_take_quiz_taker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef WINDOWTAKEQUIZTAKER}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define WINDOWTAKEQUIZTAKER}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_take_quiz_8h}{WindowTakeQuiz.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_quiz_8h}{Quiz.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }UI \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_window_take_quiz_taker}{WindowTakeQuizTaker}}; \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_quiz}{WindowQuiz}}; \textcolor{comment}{// Forward declaration.}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_take_quiz_taker}{WindowTakeQuizTaker}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{33     Q\_OBJECT}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{private}:}
+\DoxyCodeLine{36         QLabel         *label\_Taker;}
+\DoxyCodeLine{37         QLineEdit      *lineEdit\_Taker;}
+\DoxyCodeLine{38         QPushButton    *pushButton\_Cancel;}
+\DoxyCodeLine{39         QPushButton    *pushButton\_Start;}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_window_quiz}{WindowQuiz}}     *windowQuiz;}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_window_take_quiz}{WindowTakeQuiz}} *windowTakeQuiz;}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_quiz}{Quiz}}           *quiz;}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_quiz}{Quiz}}           *quizTemp;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{46         \textcolor{keywordtype}{void} cancel();}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} startQuiz();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keyword}{public}:}
+\DoxyCodeLine{50         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_window_take_quiz_taker_af8f8cf681077cf8a6afb586f7a52c7bd}{WindowTakeQuizTaker}}(\mbox{\hyperlink{class_quiz}{Quiz}} *quiz = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), \mbox{\hyperlink{class_quiz}{Quiz}} *quizTemp = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_window_take_quiz_taker_a502295bebcf4107219f3fa546c91bc6e}{\string~WindowTakeQuizTaker}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     signals:}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} switchWindow();}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

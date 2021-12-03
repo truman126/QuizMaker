@@ -1,0 +1,98 @@
+\hypertarget{_window_quiz_8h_source}{}\doxysection{Window\+Quiz.\+h}
+\mbox{\hyperlink{_window_quiz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef WINDOWQUIZ}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define WINDOWQUIZ}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QPlainTextEdit>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QStringView>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_edit_quiz_8h}{WindowEditQuiz.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_take_quiz_taker_8h}{WindowTakeQuizTaker.h}}"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_take_quiz_8h}{WindowTakeQuiz.h}}"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_quiz_8h}{Quiz.h}}"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_quiz_file_8h}{QuizFile.h}}"{}}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{namespace }UI \{ \textcolor{keyword}{class }MainWindow; \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_quiz}{WindowQuiz}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{38     Q\_OBJECT}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{private}:}
+\DoxyCodeLine{41         QPushButton         *pushButton\_New;}
+\DoxyCodeLine{42         QPushButton         *pushButton\_Open;}
+\DoxyCodeLine{43         QPushButton         *pushButton\_SaveAs;}
+\DoxyCodeLine{44         QLabel              *label\_File;}
+\DoxyCodeLine{45         QLineEdit           *lineEdit\_File;}
+\DoxyCodeLine{46         QLabel              *label\_Title;}
+\DoxyCodeLine{47         QLineEdit           *lineEdit\_Title;}
+\DoxyCodeLine{48         QLabel              *label\_Maker;}
+\DoxyCodeLine{49         QLineEdit           *lineEdit\_Maker;}
+\DoxyCodeLine{50         QLabel              *label\_Taker;}
+\DoxyCodeLine{51         QLineEdit           *lineEdit\_Taker;}
+\DoxyCodeLine{52         QPlainTextEdit      *plainTextEdit\_Description;}
+\DoxyCodeLine{53         QLabel              *label\_Points;}
+\DoxyCodeLine{54         QLineEdit           *lineEdit\_Points;}
+\DoxyCodeLine{55         QLabel              *label\_Status;}
+\DoxyCodeLine{56         QLineEdit           *lineEdit\_Status;}
+\DoxyCodeLine{57         QLabel              *label\_Date;}
+\DoxyCodeLine{58         QLineEdit           *lineEdit\_Date;}
+\DoxyCodeLine{59         QLabel              *label\_Time;}
+\DoxyCodeLine{60         QLineEdit           *lineEdit\_Time;}
+\DoxyCodeLine{61         QLabel              *label\_TimeLimit;}
+\DoxyCodeLine{62         QLineEdit           *lineEdit\_TimeLimit;}
+\DoxyCodeLine{63         QLabel              *label\_TimeUsed;}
+\DoxyCodeLine{64         QLineEdit           *lineEdit\_TimeUsed;}
+\DoxyCodeLine{65         QLineEdit           *lineEdit\_SettingRandomQuestion;}
+\DoxyCodeLine{66         QLineEdit           *lineEdit\_SettingJump;}
+\DoxyCodeLine{67         QLineEdit           *lineEdit\_SettingChange;}
+\DoxyCodeLine{68         QLineEdit           *lineEdit\_SettingBack;}
+\DoxyCodeLine{69         QLineEdit           *lineEdit\_SettingPointsQuiz;}
+\DoxyCodeLine{70         QLineEdit           *lineEdit\_SettingPointsQuestion;}
+\DoxyCodeLine{71         QLineEdit           *lineEdit\_PasswordEdit;}
+\DoxyCodeLine{72         QPushButton         *pushButton\_Edit;}
+\DoxyCodeLine{73         QLineEdit           *lineEdit\_PasswordTake;}
+\DoxyCodeLine{74         QPushButton         *pushButton\_Take;}
+\DoxyCodeLine{75         QMessageBox          messageBox;}
+\DoxyCodeLine{76         \mbox{\hyperlink{class_window_edit_quiz}{WindowEditQuiz}}      *windowEditQuiz;}
+\DoxyCodeLine{77         \mbox{\hyperlink{class_window_take_quiz_taker}{WindowTakeQuizTaker}} *windowTakeQuizTaker;}
+\DoxyCodeLine{78         \mbox{\hyperlink{class_window_take_quiz}{WindowTakeQuiz}}      *windowTakeQuiz;}
+\DoxyCodeLine{79         \mbox{\hyperlink{class_quiz}{Quiz}}                *quiz;}
+\DoxyCodeLine{80         \mbox{\hyperlink{class_quiz_file}{QuizFile}}            *quizFile;}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{83         \textcolor{keywordtype}{void} newQuiz();}
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} openQuiz();}
+\DoxyCodeLine{85         \textcolor{keywordtype}{void} saveAsQuiz();}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} editQuiz();}
+\DoxyCodeLine{87         \textcolor{keywordtype}{void} takeQuiz();}
+\DoxyCodeLine{88         \textcolor{keywordtype}{void} updateWindow();}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{keyword}{public}:}
+\DoxyCodeLine{91         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_window_quiz_ac28787f8211473105a43aaa4e854f91e}{WindowQuiz}}(\mbox{\hyperlink{class_quiz}{Quiz}} *quiz = \textcolor{keyword}{new} \mbox{\hyperlink{class_quiz}{Quiz}}(), QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_window_quiz_a36cd93f3a29852e1e576effacda3c41f}{\string~WindowQuiz}}();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     signals:}
+\DoxyCodeLine{95         \textcolor{keywordtype}{void} switchWindow();}
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

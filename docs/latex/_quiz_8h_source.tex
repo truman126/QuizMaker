@@ -1,0 +1,97 @@
+\hypertarget{_quiz_8h_source}{}\doxysection{Quiz.\+h}
+\mbox{\hyperlink{_quiz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef QUIZ}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define QUIZ}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_question_8h}{Question.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_quiz}{Quiz}} \{}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         std::string           quizFile;}
+\DoxyCodeLine{28         std::string           quizTitle;}
+\DoxyCodeLine{29         std::string           quizMaker;}
+\DoxyCodeLine{30         std::string           quizTaker;}
+\DoxyCodeLine{31         std::string           quizDescription;}
+\DoxyCodeLine{32         \textcolor{keywordtype}{float}                 quizPointsCorrect;}
+\DoxyCodeLine{33         \textcolor{keywordtype}{float}                 quizPointsTotal;}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int}                   quizStatus;}
+\DoxyCodeLine{35         std::string           quizDate;}
+\DoxyCodeLine{36         std::string           quizTime;}
+\DoxyCodeLine{37         std::string           quizTimeLimit;}
+\DoxyCodeLine{38         std::string           quizTimeUsed;}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool}                  quizSettingRandomQuestion;}
+\DoxyCodeLine{40         \textcolor{keywordtype}{bool}                  quizSettingJump;}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool}                  quizSettingChange;}
+\DoxyCodeLine{42         \textcolor{keywordtype}{bool}                  quizSettingBack;}
+\DoxyCodeLine{43         \textcolor{keywordtype}{bool}                  quizSettingPointsQuiz;}
+\DoxyCodeLine{44         \textcolor{keywordtype}{bool}                  quizSettingPointsQuestion;}
+\DoxyCodeLine{45         std::string           quizPasswordEdit;}
+\DoxyCodeLine{46         std::string           quizPasswordTake;}
+\DoxyCodeLine{47         std::vector<Question> quizQuestions;}
+\DoxyCodeLine{48     \textcolor{keyword}{public}:}
+\DoxyCodeLine{49         \mbox{\hyperlink{class_quiz_a45819ccc730f967951d4d8896db6c18c}{Quiz}}();}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_quiz_a45819ccc730f967951d4d8896db6c18c}{Quiz}}(std::string quizFile, std::string quizTitle, std::string quizMaker, std::string quizTaker, std::string quizDescription, \textcolor{keywordtype}{float} quizPointsCorrect, \textcolor{keywordtype}{float} quizPointsTotal, \textcolor{keywordtype}{int} quizStatus, std::string quizDate, std::string quizTime, std::string quizTimeLimit, std::string quizTimeUsed, \textcolor{keywordtype}{bool} quizSettingRandomQuestion, \textcolor{keywordtype}{bool} quizSettingJump, \textcolor{keywordtype}{bool} quizSettingChange, \textcolor{keywordtype}{bool} quizSettingBack, \textcolor{keywordtype}{bool} quizSettingPointsQuiz, \textcolor{keywordtype}{bool} quizSettingPointsQuestion, std::string quizPasswordEdit, std::string quizPasswordTake, std::vector<Question> quizQuestions);}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_quiz_adcdf98dce1ad90cb17580127c0367673}{\string~Quiz}}();}
+\DoxyCodeLine{52         std::string           \mbox{\hyperlink{class_quiz_afb258476d6b6fdc3285075ba67b47ea8}{getQuizFile}}();}
+\DoxyCodeLine{53         std::string           \mbox{\hyperlink{class_quiz_a24de8aadbede95dec127e0bc03e6fb02}{getQuizTitle}}();}
+\DoxyCodeLine{54         std::string           \mbox{\hyperlink{class_quiz_a032d19bdb4386ca9e40808ae67e39a7f}{getQuizMaker}}();}
+\DoxyCodeLine{55         std::string           \mbox{\hyperlink{class_quiz_a2fdd8c15854544761d7dde2c248df17d}{getQuizTaker}}();}
+\DoxyCodeLine{56         std::string           \mbox{\hyperlink{class_quiz_ae99b47d0dbded1c97510d7ed00c5b2cb}{getQuizDescription}}();}
+\DoxyCodeLine{57         \textcolor{keywordtype}{float}                 \mbox{\hyperlink{class_quiz_acefcfaf74e9894ad4ac4203448c8bb1d}{getQuizPointsCorrect}}();}
+\DoxyCodeLine{58         \textcolor{keywordtype}{float}                 \mbox{\hyperlink{class_quiz_ac5a9dbabae4d3a01239bbf46ab865af4}{getQuizPointsTotal}}();}
+\DoxyCodeLine{59         \textcolor{keywordtype}{int}                   \mbox{\hyperlink{class_quiz_a78d1e9dc0ce0b9cce2eec31665f741f4}{getQuizStatus}}();}
+\DoxyCodeLine{60         std::string           \mbox{\hyperlink{class_quiz_a3d6b6cba3911a578300eaacdabfc0ffb}{getQuizDate}}();}
+\DoxyCodeLine{61         std::string           \mbox{\hyperlink{class_quiz_a11a14f270fca687d1f07364cb17ad4d0}{getQuizTime}}();}
+\DoxyCodeLine{62         std::string           \mbox{\hyperlink{class_quiz_ae8e45653a3d6067f791c9f54a47cc99c}{getQuizTimeLimit}}();}
+\DoxyCodeLine{63         std::string           \mbox{\hyperlink{class_quiz_abfce45e676baafae516948e95c87cb35}{getQuizTimeUsed}}();}
+\DoxyCodeLine{64         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_a9542b3416e04831fa53508cbacd0e88e}{getQuizSettingRandomQuestion}}();}
+\DoxyCodeLine{65         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_a746f8b7887a298beae207ea81789ad12}{getQuizSettingJump}}();}
+\DoxyCodeLine{66         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_a2c66b65dcc021b4af1d453d35eb7be80}{getQuizSettingChange}}();}
+\DoxyCodeLine{67         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_aa97bd0a4bd39f7f5e97e1d93f4a36032}{getQuizSettingBack}}();}
+\DoxyCodeLine{68         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_ab5bbebf4c8841e12c97baedbdbe64a9f}{getQuizSettingPointsQuiz}}();}
+\DoxyCodeLine{69         \textcolor{keywordtype}{bool}                  \mbox{\hyperlink{class_quiz_afebc7129434453f4d9f1f2617acb7d03}{getQuizSettingPointsQuestion}}();}
+\DoxyCodeLine{70         std::string           \mbox{\hyperlink{class_quiz_a037a4fa68544099850be940da26a4b29}{getQuizPasswordEdit}}();}
+\DoxyCodeLine{71         std::string           \mbox{\hyperlink{class_quiz_ab914ae013c5bf7a30078c4b176a91b19}{getQuizPasswordTake}}();}
+\DoxyCodeLine{72         std::vector<Question> \mbox{\hyperlink{class_quiz_abec5ced6848fab212a6791717ad51b5a}{getQuizQuestions}}();}
+\DoxyCodeLine{73         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a3eb0bb99a7d3d884c88afdab73903c6e}{setQuizFile}}(std::string quizFile);}
+\DoxyCodeLine{74         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a26bb13e9d088f1d4269109edda56e5c3}{setQuizTitle}}(std::string quizTitle);}
+\DoxyCodeLine{75         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a8507ed4a877c606d0b7c08615ed25705}{setQuizMaker}}(std::string quizMaker);}
+\DoxyCodeLine{76         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a77b8a97e1a2f7bc18183689e7589291d}{setQuizTaker}}(std::string quizTaker);}
+\DoxyCodeLine{77         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_af6fe34f2b4cb6ea03814426b074ae81c}{setQuizDescription}}(std::string quizDescription);}
+\DoxyCodeLine{78         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a50faf35bd2576d34bc2791d6db089183}{setQuizPointsCorrect}}(\textcolor{keywordtype}{float} quizPointsCorrect);}
+\DoxyCodeLine{79         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_aebafca390567e1d6f26706a10fb9fce1}{setQuizPointsTotal}}(\textcolor{keywordtype}{float} quizPointsTotal);}
+\DoxyCodeLine{80         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_ad806d65cd05fb2eaa831c15c2704c8f4}{setQuizStatus}}(\textcolor{keywordtype}{int} quizStatus);}
+\DoxyCodeLine{81         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_ad99776cad770119b968bf010cd3ba78a}{setQuizDate}}(std::string quizDate);}
+\DoxyCodeLine{82         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_aafca685a8c6cd7c98accb634a58cc0ce}{setQuizTime}}(std::string quizTime);}
+\DoxyCodeLine{83         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_ad93e137dec1f0ca2783708802d2c730b}{setQuizTimeLimit}}(std::string quizTimeLimit);}
+\DoxyCodeLine{84         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a7b068bd03f5ed993bb9635d6100f728c}{setQuizTimeUsed}}(std::string quizTimeUsed);}
+\DoxyCodeLine{85         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_aec85ed730ba59099246aa291fdb7b1d0}{setQuizSettingRandomQuestion}}(\textcolor{keywordtype}{bool} quizSettingRandomQuestion);}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a6406c50adb2e682eb41c1807fda46153}{setQuizSettingJump}}(\textcolor{keywordtype}{bool} quizSettingJump);}
+\DoxyCodeLine{87         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a71b450d37ff702a3e36bf17f2bd5ce3e}{setQuizSettingChange}}(\textcolor{keywordtype}{bool} quizSettingChange);}
+\DoxyCodeLine{88         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_ab7b25b616e9f080ff08176f5c2a055c2}{setQuizSettingBack}}(\textcolor{keywordtype}{bool} quizSettingBack);}
+\DoxyCodeLine{89         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a86bb485df736b4696c883edb12db19bd}{setQuizSettingPointsQuiz}}(\textcolor{keywordtype}{bool} quizSettingPointsQuiz);}
+\DoxyCodeLine{90         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_aead4d6583180e40578649d4347584754}{setQuizSettingPointsQuestion}}(\textcolor{keywordtype}{bool} quizSettingPointsQuestion);}
+\DoxyCodeLine{91         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_af2398b73cf7a7961b42bbf08e45ab039}{setQuizPasswordEdit}}(std::string quizPasswordEdit);}
+\DoxyCodeLine{92         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_abbc3ed693dca6130198a086ea8336ff3}{setQuizPasswordTake}}(std::string quizPasswordTake);}
+\DoxyCodeLine{93         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a2f8c006b3f2ea1c41fb2546ad85db872}{setQuizQuestions}}(std::vector<Question> quizQuestions);}
+\DoxyCodeLine{94         \textcolor{keywordtype}{void}                  \mbox{\hyperlink{class_quiz_a2acfd9180c4f31407788bd56cc82827c}{addQuestion}}(\mbox{\hyperlink{class_question}{Question}} question);}
+\DoxyCodeLine{95 \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
